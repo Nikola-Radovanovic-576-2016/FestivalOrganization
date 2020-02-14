@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4F8022B-5002-4D4D-B459-60D709A9DAF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FestivalOrganization</RootNamespace>
+    <AssemblyName>FestivalOrganization</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddActor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddActor.Designer.cs">
+      <DependentUpon>AddActor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConcert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConcert.Designer.cs">
+      <DependentUpon>AddConcert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFestival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFestival.Designer.cs">
+      <DependentUpon>AddFestival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMusician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMusician.Designer.cs">
+      <DependentUpon>AddMusician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddShow.Designer.cs">
+      <DependentUpon>AddShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteConcert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteConcert.Designer.cs">
+      <DependentUpon>DeleteConcert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFestival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFestival.Designer.cs">
+      <DependentUpon>DeleteFestival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteShow.Designer.cs">
+      <DependentUpon>DeleteShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectConcert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectConcert.Designer.cs">
+      <DependentUpon>SelectConcert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectFestival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectFestival.Designer.cs">
+      <DependentUpon>SelectFestival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectShow.Designer.cs">
+      <DependentUpon>SelectShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateConcert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateConcert.Designer.cs">
+      <DependentUpon>UpdateConcert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFestival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFestival.Designer.cs">
+      <DependentUpon>UpdateFestival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateShow.Designer.cs">
+      <DependentUpon>UpdateShow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddActor.resx">
+      <DependentUpon>AddActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConcert.resx">
+      <DependentUpon>AddConcert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFestival.resx">
+      <DependentUpon>AddFestival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMusician.resx">
+      <DependentUpon>AddMusician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddShow.resx">
+      <DependentUpon>AddShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteConcert.resx">
+      <DependentUpon>DeleteConcert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFestival.resx">
+      <DependentUpon>DeleteFestival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteShow.resx">
+      <DependentUpon>DeleteShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SelectConcert.resx">
+      <DependentUpon>SelectConcert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectFestival.resx">
+      <DependentUpon>SelectFestival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectShow.resx">
+      <DependentUpon>SelectShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateConcert.resx">
+      <DependentUpon>UpdateConcert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFestival.resx">
+      <DependentUpon>UpdateFestival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateShow.resx">
+      <DependentUpon>UpdateShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
